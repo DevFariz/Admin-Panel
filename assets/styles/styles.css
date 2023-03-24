@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.administrator-content {
+  margin: 20px 10px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.administrator-header {
+  padding: 20px 10px 0;
+  margin-bottom: 25px;
+}
+
+.administrator-header h1 {
+  font-size: 20px;
+}
+
+.administrator-main {
+  padding-bottom: 25px;
+}
+
+.administrator-filters {
+  padding: 20px 10px;
+}
+
+.administrator-table {
+  padding: 20px 0;
+  overflow-x: scroll;
+}
+
+.adminitrator-table-item.adminitrator-table-item-top {
+  font-weight: 700;
+  background-color: #c2c1c1;
+}
+
+.adminitrator-table-item {
+  display: flex;
+  padding: 15px;
+}
+
+.adminitrator-table-item:nth-child(even) {
+  background: #f0f0f0;
+}
+
+.adminitrator-table-item .col1 {
+  width: 100px;
+}
+
+.adminitrator-table-item .col2 {
+  width: 150px;
+}
+
+.adminitrator-table-item .col3 {
+  width: 500px;
+  overflow-x: scroll;
+}
+
+.adminitrator-table-item .col4 {
+  width: 100px;
+}
+
+.adminitrator-table-item .col5 {
+  width: 80px;
+}
+
+.administrator-table-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.administrator-table-pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.administrator-table-pagination-container button {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  background: #ecebeb;
+}
+
+.administrator-table-pagination-container button.active {
+  background: #cfcdcd;
+}
+
+
+.administrator-table-pagination-container p {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  background: #ecebeb;
+}
+
