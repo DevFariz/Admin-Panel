@@ -124,6 +124,7 @@ body {
 }
 
 .administrator-popup-content {
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,21 +137,33 @@ body {
 .administrator-popup-content div {
   display: flex;
   align-items: center;
+}
+
+.administrator-popup-content.personal-popup-content div {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.administrator-popup-content.personal-popup-content h3 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .administrator-popup-content div p {
   padding: 15px 10px;
   margin-right: 20px;
+  flex-basis: 65%;
 }
 
 .administrator-popup-content div button {
   border: none;
   padding: 5px 20px;
   border-radius: 20px;
-
 }
-
 
 .administrator-popup-transition {
   animation-name: popup;
@@ -180,4 +193,11 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+
+.administrator-popup-content form {
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
 }
