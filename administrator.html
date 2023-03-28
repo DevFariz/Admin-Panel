@@ -21,8 +21,12 @@
       <header class="administrator-header">
         <h1>Sifarisler:</h1>
         <div class="administrator-header-btns">
-          <button class="administrator-header-btn">Ofisiant <span></span></button>
-          <button class="administrator-header-btn">Sifaris <span></span></button>
+          <button id="officiant-btn" class="administrator-header-btn">
+            Ofisiant <span></span>
+          </button>
+          <button id="order-btn" class="administrator-header-btn">
+            Sifaris <span></span>
+          </button>
         </div>
       </header>
       <main class="administrator-main">
@@ -140,28 +144,49 @@
         <div>
           <p>Sifaris haqqinda melumat kdnjsdbfjsd f djsfjhdsbf fjdsbhg</p>
           <form>
-            <input type="radio" name="color" value="red" id="red">
-            <label for="red">Cayci</label><br>
-            <input type="radio" name="color" value="blue" id="blue">
-            <label for="blue">Aspaz</label><br>
-            <input type="radio" name="color" value="green" id="green">
-            <label for="green">Donerci</label><br>
+            <input type="radio" name="color" value="red" id="red" />
+            <label for="red">Cayci</label><br />
+            <input type="radio" name="color" value="blue" id="blue" />
+            <label for="blue">Aspaz</label><br />
+            <input type="radio" name="color" value="green" id="green" />
+            <label for="green">Donerci</label><br />
           </form>
           <button>Add</button>
         </div>
         <div>
           <p>Sifaris haqqinda melumat kdnjsdbfjs</p>
           <form>
-            <input type="radio" name="color" value="red" id="red">
-            <label for="red">Cayci</label><br>
-            <input type="radio" name="color" value="blue" id="blue">
-            <label for="blue">Aspaz</label><br>
-            <input type="radio" name="color" value="green" id="green">
-            <label for="green">Donerci</label><br>
+            <input type="radio" name="color" value="red" id="red" />
+            <label for="red">Cayci</label><br />
+            <input type="radio" name="color" value="blue" id="blue" />
+            <label for="blue">Aspaz</label><br />
+            <input type="radio" name="color" value="green" id="green" />
+            <label for="green">Donerci</label><br />
           </form>
           <button>Add</button>
         </div>
         <button class="administrator-close-btn">X</button>
+      </div>
+    </div>
+
+    <div id="officiant-popup-container" class="popup-container">
+      <div id="officiant-popup-content" class="popup-content">
+        <div>
+          <div>Masa: <span>1</span></div>
+        </div>
+        <button id="officiant-popup-close-btn" class="popup-close-btn">
+          X
+        </button>
+      </div>
+    </div>
+
+    <div id="order-popup-container" class="popup-container">
+      <div id="order-popup-content" class="popup-content">
+        <div>
+          <div>Masa: <span>1</span></div>
+          <div>Odenis: <span>Negd</span></div>
+        </div>
+        <button id="order-popup-close-btn" class="popup-close-btn">X</button>
       </div>
     </div>
 
