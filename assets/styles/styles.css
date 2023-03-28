@@ -16,8 +16,35 @@ body {
 }
 
 .administrator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 10px 0;
   margin-bottom: 25px;
+}
+
+.administrator-header-btns{
+  display: flex;
+}
+
+.administrator-header-btn{
+  position: relative;
+  margin: 0 8px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid orange;
+  background-color: #fff;
+}
+
+.administrator-header-btn span{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 .administrator-header h1 {
