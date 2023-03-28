@@ -44,6 +44,7 @@ body {
 
 .adminitrator-table-item {
   display: flex;
+  align-items: center;
   padding: 15px;
 }
 
@@ -60,7 +61,7 @@ body {
 }
 
 .adminitrator-table-item .col3 {
-  width: 500px;
+  width: 640px;
   overflow-x: scroll;
 }
 
@@ -68,8 +69,12 @@ body {
   width: 100px;
 }
 
-.adminitrator-table-item .col5 {
-  width: 80px;
+.adminitrator-table-item div:last-child button{
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid orange;
 }
 
 .administrator-table-pagination {
