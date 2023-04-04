@@ -173,33 +173,40 @@ body {
 
 .administrator-popup-content div {
   display: flex;
-  align-items: center;
 }
 
 .administrator-popup-content.personal-popup-content div {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-.administrator-popup-content.personal-popup-content h3 {
-  position: absolute;
-  top: 15px;
-  left: 15px;
+.administrator-popup-content__title{
+  flex-basis: 250px;
+  margin-right: 30px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 20px;
+  color: rgb(224, 146, 0);
+  line-height: 24px;
 }
 
-.administrator-popup-content div p {
-  padding: 15px 10px;
-  margin-right: 20px;
-  flex-basis: 65%;
+.administrator-popup-content__desc{
+  margin-right: 30px;
+  margin-bottom: 30px;
+  line-height: 24px;
 }
 
-.administrator-popup-content div button {
+.administrator-popup-content__btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.administrator-popup-content__btn-container button {
+  padding: 8px 25px;
   border: none;
-  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 20px;
+  color: rgb(255, 167, 4);
 }
 
 .administrator-popup-transition {
