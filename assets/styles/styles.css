@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
   height: 100vh;
 }
 
@@ -34,7 +34,7 @@ body {
   padding: 5px 15px;
   border-radius: 10px;
   border: none;
-  border: 1px solid orange;
+  border: 1px solid #6c7ae0;
   background-color: #fff;
 }
 
@@ -51,14 +51,11 @@ body {
 .administrator-header h1 {
   font-size: 24px;
   font-weight: 700;
+  color: #6c7ae0;
 }
 
 .administrator-main {
   padding-bottom: 25px;
-}
-
-.administrator-filters {
-  padding: 20px 10px;
 }
 
 .administrator-table {
@@ -68,21 +65,24 @@ body {
   margin: 0 auto 30px;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid rgb(241, 238, 238);
 }
 
 .adminitrator-table-item.adminitrator-table-item-top {
   font-weight: 700;
-  background-color: #c2c1c1;
+  color: #fff;
+  background-color: #6c7ae0;
 }
 
 .adminitrator-table-item {
   display: flex;
   align-items: center;
+  color: gray;
   padding: 15px;
 }
 
 .adminitrator-table-item:nth-child(even) {
-  background: #f0f0f0;
+  background: #f8f6ff;
 }
 
 .adminitrator-table-item .col1 {
@@ -126,11 +126,12 @@ body {
   border-radius: 50%;
   border: none;
   margin: 0 5px;
-  background: #ecebeb;
+  border: 1px solid #6c7ae0;
+  background: #fff;
 }
 
 .administrator-table-pagination-container button.active {
-  background: #cfcdcd;
+  /* background: #cfcdcd; */
 }
 
 
