@@ -183,7 +183,7 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   font-weight: 700;
-  color: rgb(224, 146, 0);
+  color: #2436c0;
   line-height: 24px;
 }
 
@@ -204,7 +204,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   border-radius: 20px;
-  color: rgb(255, 167, 4);
+  color: #6c7ae0;
 }
 
 .administrator-popup-transition {
@@ -223,7 +223,7 @@ body {
   top: 10px;
   border-radius: 50%;
   border: none;
-  background-color: #cfcdcd;
+  background-color: #6c7ae0;
 }
 
 @keyframes popup {
@@ -278,7 +278,7 @@ body {
 
 .popup-content div div span{
   margin-left: 10px;
-  color: orange;
+  color: #6c7ae0;
 }
 
 .popup-title {
@@ -300,7 +300,7 @@ body {
   right: 10px;
   width: 25px;
   height: 25px;
-  background-color: #ccc;
+  background-color: #6c7ae0;
   border: none;
   border-radius: 50%;
   cursor: pointer;
