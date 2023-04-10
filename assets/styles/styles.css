@@ -90,7 +90,7 @@ body {
 }
 
 .adminitrator-table-item .col2 {
-  width: 450px;
+  width: 250px;
 }
 
 .adminitrator-table-item .col3 {
@@ -100,10 +100,13 @@ body {
 
 .adminitrator-table-item div:last-child button{
   padding: 5px 20px;
-  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6c7ae0;
   border-radius: 20px;
   background-color: #fff;
-  border: 1px solid orange;
+  border: none;
+  border: 1px solid #6c7ae0;
 }
 
 .administrator-table-pagination {
@@ -128,10 +131,6 @@ body {
   margin: 0 5px;
   border: 1px solid #6c7ae0;
   background: #fff;
-}
-
-.administrator-table-pagination-container button.active {
-  /* background: #cfcdcd; */
 }
 
 
