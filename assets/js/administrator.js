@@ -1,28 +1,34 @@
-const popup = document.querySelector(".administrator-popup");
-const popupContent = document.querySelector(".administrator-popup-content");
-const closeBtn = document.querySelector(".administrator-close-btn");
-const popupTriggers = document.querySelectorAll(
-  ".adminitrator-table-item__popup"
-);
+const popups = document.querySelectorAll(".administrator-popup");
+const closeBtns = document.querySelectorAll(".administrator-close-btn");
+const popupItems = document.querySelectorAll("[data-id]");
 
-popupTriggers.forEach((trigger) => {
+popupItems.forEach((trigger) => {
   trigger.addEventListener("click", (e) => {
     e.preventDefault();
-    popup.classList.add("popup-transition");
-    popup.style.display = "block";
+
+    const popups = document.querySelectorAll("[popup-id]");
+
+    popups.forEach((elem) => {
+      if (trigger.getAttribute("data-id") === elem.getAttribute("popup-id")) {
+        elem.classList.add("popup-transition");
+        elem.style.display = "block";
+
+        closeBtns.forEach((closeBtn) => {
+          closeBtn.addEventListener("click", () => {
+            elem.classList.remove("popup-transition");
+            elem.style.display = "none";
+          });
+        });
+
+        // const popupTransition = document.querySelector(".popup-transition");
+
+        // popupTransition.addEventListener("click", () => {
+        //   elem.classList.remove("popup-transition");
+        //   elem.style.display = "none";
+        // });
+      }
+    });
   });
-});
-
-closeBtn.addEventListener("click", () => {
-  popup.classList.remove("popup-transition");
-  popup.style.display = "none";
-});
-
-popup.addEventListener("click", (e) => {
-  if (e.target === popup) {
-    popup.classList.remove("popup-transition");
-    popup.style.display = "none";
-  }
 });
 
 const officiantBtn = document.getElementById("officiant-btn");
