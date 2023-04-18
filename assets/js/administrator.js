@@ -1,6 +1,8 @@
 const popupsGeneral = document.querySelectorAll(".administrator-popup");
 const closeBtns = document.querySelectorAll(".administrator-close-btn");
 const popupItems = document.querySelectorAll("[data-id]");
+const printItems = document.querySelectorAll("[data-printId]");
+const tableCloseItems = document.querySelectorAll("[data-closeId]");
 
 popupItems.forEach((trigger) => {
   trigger.addEventListener("click", (e) => {
@@ -23,6 +25,19 @@ popupItems.forEach((trigger) => {
     });
   });
 });
+
+printItems.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    alert(trigger.getAttribute("data-printId"))
+  })
+})
+
+tableCloseItems.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    alert(trigger.getAttribute("data-closeId"))
+  })
+})
+
 
 const officiantBtn = document.getElementById("officiant-btn");
 const orderBtn = document.getElementById("order-btn");

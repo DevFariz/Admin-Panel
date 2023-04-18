@@ -99,11 +99,11 @@ body {
 }
 
 .adminitrator-table-item .col4 {
-  width: 120px;
+  width: 100px;
 }
 
 .adminitrator-table-item .col5 {
-  width: 120px;
+  width: 100px;
 }
 
 .adminitrator-table-item .col6 {
@@ -122,6 +122,18 @@ body {
   background-color: #fff;
   border: none;
   border: 1px solid #6c7ae0;
+}
+
+.adminitrator-table-item.adminitrator-table-item__finsihed{
+  border-left: 5px solid rgb(27, 235, 27);
+}
+
+.adminitrator-table-item.adminitrator-table-item__pending{
+  border-left: 5px solid yellow;
+}
+
+.adminitrator-table-item.adminitrator-table-item__rejected{
+  border-left: 5px solid rgb(255, 50, 50);
 }
 
 .administrator-table-pagination {
@@ -186,6 +198,7 @@ body {
 
 .administrator-popup-content div {
   display: flex;
+  align-items: start;
 }
 
 .administrator-popup-content.personal-popup-content div {
@@ -206,6 +219,12 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   line-height: 24px;
+}
+
+.administrator-popup-content__status{
+  padding: 5px 10px;
+  border: 1px solid rgb(36, 245, 36);
+  border-radius: 10px;
 }
 
 .administrator-popup-content__btn-container{
