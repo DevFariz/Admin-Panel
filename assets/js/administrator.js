@@ -1,4 +1,4 @@
-const popups = document.querySelectorAll(".administrator-popup");
+const popupsGeneral = document.querySelectorAll(".administrator-popup");
 const closeBtns = document.querySelectorAll(".administrator-close-btn");
 const popupItems = document.querySelectorAll("[data-id]");
 
@@ -19,13 +19,6 @@ popupItems.forEach((trigger) => {
             elem.style.display = "none";
           });
         });
-
-        // const popupTransition = document.querySelector(".popup-transition");
-
-        // popupTransition.addEventListener("click", () => {
-        //   elem.classList.remove("popup-transition");
-        //   elem.style.display = "none";
-        // });
       }
     });
   });
