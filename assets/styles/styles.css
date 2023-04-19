@@ -16,7 +16,7 @@ body {
 }
 
 .administrator-header {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto 20px;
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@ body {
 .administrator-table {
   /* padding: 20px 0; */
   overflow-x: scroll;
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto 30px;
   border-radius: 10px;
   overflow: hidden;
@@ -75,11 +75,20 @@ body {
 }
 
 .adminitrator-table-item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: gray;
   padding: 15px;
+}
+
+
+.adminitrator-table-item__notification{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 .adminitrator-table-item:nth-child(even) {
@@ -99,7 +108,7 @@ body {
 }
 
 .adminitrator-table-item .col4 {
-  width: 100px;
+  width: 90px;
 }
 
 .adminitrator-table-item .col5 {
@@ -110,6 +119,9 @@ body {
   width: 140px;
 }
 
+.adminitrator-table-item .col7 {
+  width: 20px;
+}
 
 .adminitrator-table-item button{
   position: relative;
@@ -124,15 +136,12 @@ body {
   border: 1px solid #6c7ae0;
 }
 
-.adminitrator-table-item.adminitrator-table-item__finsihed{
+
+.adminitrator-table-item.adminitrator-table-item__active{
   border-left: 5px solid rgb(27, 235, 27);
 }
 
-.adminitrator-table-item.adminitrator-table-item__pending{
-  border-left: 5px solid yellow;
-}
-
-.adminitrator-table-item.adminitrator-table-item__rejected{
+.adminitrator-table-item.adminitrator-table-item__finished{
   border-left: 5px solid rgb(255, 50, 50);
 }
 
@@ -223,8 +232,36 @@ body {
 
 .administrator-popup-content__status{
   padding: 5px 10px;
-  border: 1px solid rgb(36, 245, 36);
   border-radius: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.administrator-popup-content__status_finished {
+  border: 1px solid rgb(27, 235, 27);
+  color: rgb(27, 235, 27);
+}
+
+.administrator-popup-content__status_rejected {
+  border: 1px solid rgb(235, 27, 27);
+  color: rgb(235, 27, 27);
+}
+
+.administrator-popup-content__status_pending{
+  border: 1px solid rgb(207, 211, 2);
+  color: rgb(207, 211, 2);
+}
+
+.administrator-popup-content__status_kitchen-started {
+  border: 1px solid rgb(211, 138, 2);
+  color: rgb(211, 138, 2);
+}
+
+.administrator-popup-content__status_kitchen-finished {
+  border: 1px solid rgb(2, 92, 211);
+  color: rgb(2, 92, 211);
 }
 
 .administrator-popup-content__btn-container{
