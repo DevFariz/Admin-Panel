@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daxil ol</title>
-  <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/styles.css">
-</head>
-<body>
-  <main class="login">
-    <div class="login-popup">
-      <div class="login-popup-container">
-        <h3 class="login-popup__title">Daxil ol</h3>
-        <input placeholder="Istifadeci adi" type="text">
-        <input placeholder="Sifre" type="password">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daxil ol</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body>
+    <main class="login">
+      <div class="login-popup">
+        <div class="login-popup-container">
+          <h3 class="login-popup__title">Daxil ol</h3>
+          <div class="login-btns">
+            <div>
+              <input
+                type="radio"
+                name="login_type"
+                id="administrator"
+                value="administrator"
+              />
+              <label for="administrator">Administrator</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="login_type"
+                id="personal"
+                value="personal"
+              />
+              <label for="personal">Personal</label>
+            </div>
+          </div>
+          <input placeholder="Istifadeci adi" type="text" />
+          <input placeholder="Sifre" type="password" />
+        </div>
       </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
